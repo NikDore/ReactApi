@@ -5,9 +5,9 @@ import { CardsPageState } from './type';
 import { getCardsData } from '../../api/PokemonApi';
 
 export function CardsPage(): ReactNode {
-    const localStorageInputValue = localStorage.getItem('inputValue') || '';
+    const localStorageInputValue = localStorage.getItem('value') || '';
 
-    const [inputValue, setInputValue] = useState<CardsPageState['inputValue']>(localStorageInputValue);
+    const [value, setInputValue] = useState<CardsPageState['value']>(localStorageInputValue);
     const [isDataLoaded, setIsDataLoaded] = useState<CardsPageState['isDataLoaded']>(false);
     const [cardsData, setCardsData] = useState<CardsPageState['cardsData']>({
         data: [],
@@ -41,8 +41,8 @@ export function CardsPage(): ReactNode {
     }, []);
 
     useEffect(() => {
-        getDataFromApi(inputValue);
-    }, [getDataFromApi, inputValue]);
+        getDataFromApi(value);
+    }, [getDataFromApi, value]);
 
     return (
         <div className="cards-page">

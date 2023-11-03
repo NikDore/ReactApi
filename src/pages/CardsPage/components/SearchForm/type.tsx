@@ -3,5 +3,5 @@ export interface SearchFormProps {
 }
 
 export interface SearchFormState {
-    inputValue: string;
+    value: string;
 }

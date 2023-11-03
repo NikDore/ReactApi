@@ -1,7 +1,7 @@
 import { PokemonCard } from '../../types/types';
 
 export interface CardsPageState {
-    inputValue: string;
+    value: string;
     isDataLoaded: boolean;
     cardsData: PokemonCard;
 }
