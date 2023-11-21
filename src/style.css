@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cards-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.card-field {
+  padding: 50px 80px 170px 80px;
+  display: flex;
+
+ align-items: center;
+ justify-content: center;
+  flex-wrap: wrap;
+
+}
+.card {
+  margin: 10px;
+  text-align: center;
+}
